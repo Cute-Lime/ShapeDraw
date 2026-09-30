@@ -6,6 +6,16 @@ struct ContentView: View {
             // 背景
             Color.lightyellow
                 .ignoresSafeArea()
+                
+            // 標題文字
+            VStack {
+                Text("角落小夥伴!")
+                    .font(.custom("HiraMaruProN-W4", size: 50))
+                    .fontWeight(.bold)
+                    .foregroundStyle(.weedbrown)
+                    .padding(.top, 120)
+                Spacer()
+            }
             
             // 角落生物 - 雜草
             ZStack {
