@@ -344,6 +344,62 @@ struct ContentView: View {
                         .offset(x: -25, y: -95)
                 }
                 .offset(x: 145, y: -150)
+                
+                ZStack {
+                    Circle()
+                        .foregroundStyle(.staryellow)
+                        .frame(width: 50)
+                        .offset(x: 0, y: -120)
+                    
+                    Circle()
+                        .foregroundStyle(.lightyellow)
+                        .frame(width: 50)
+                        .offset(x: 25, y: -145)
+                    
+                    Circle()
+                        .foregroundStyle(.lightyellow)
+                        .frame(width: 50)
+                        .offset(x: 25, y: -95)
+                    
+                    Circle()
+                        .foregroundStyle(.lightyellow)
+                        .frame(width: 50)
+                        .offset(x: -25, y: -145)
+                    
+                    Circle()
+                        .foregroundStyle(.lightyellow)
+                        .frame(width: 50)
+                        .offset(x: -25, y: -95)
+                }
+                .offset(x: -155, y: 340)
+                
+                ZStack {
+                    Circle()
+                        .foregroundStyle(.staryellow)
+                        .frame(width: 50)
+                        .offset(x: 0, y: -120)
+                    
+                    Circle()
+                        .foregroundStyle(.lightyellow)
+                        .frame(width: 50)
+                        .offset(x: 25, y: -145)
+                    
+                    Circle()
+                        .foregroundStyle(.lightyellow)
+                        .frame(width: 50)
+                        .offset(x: 25, y: -95)
+                    
+                    Circle()
+                        .foregroundStyle(.lightyellow)
+                        .frame(width: 50)
+                        .offset(x: -25, y: -145)
+                    
+                    Circle()
+                        .foregroundStyle(.lightyellow)
+                        .frame(width: 50)
+                        .offset(x: -25, y: -95)
+                }
+                .offset(x: 15, y: 430)
             }
             
             // 角落生物 - 灰塵
@@ -424,6 +480,296 @@ struct ContentView: View {
             .scaleEffect(0.9)
             .rotationEffect(.degrees(30))
             .offset(x: -110, y: -310)
+
+            // 角落生物 - 粉圓們
+            ZStack {
+                // 底部陰影
+                Ellipse()
+                    .frame(width: 25, height: 145)
+                    .foregroundColor(.shadowyellow)
+                    .rotationEffect(.degrees(90))
+                    .offset(y: 34)
+                
+                // 粉紅粉圓
+                ZStack {
+                    // 身體描邊
+                    Ellipse()
+                        .frame(width: 76, height: 22)
+                        .foregroundStyle(.weedbrown)
+                    
+                    Ellipse()
+                        .trim(from: 0.4, to: 1)
+                        .frame(width: 60, height: 60)
+                        .foregroundStyle(.weedbrown)
+                        .rotationEffect(.degrees(20))
+                        .offset(x: 10, y:  -10)
+                    
+                    Ellipse()
+                        .trim(from: 0.4, to: 1)
+                        .frame(width: 60, height: 60)
+                        .foregroundStyle(.weedbrown)
+                        .rotationEffect(.degrees(17))
+                        .offset(x: -10, y:  -10)
+                    
+                    Ellipse()
+                        .trim(from: 0.5, to: 1)
+                        .frame(width: 76, height: 60)
+                        .foregroundStyle(.weedbrown)
+                        .offset(y:  -15)
+                    
+                    // 雙腳描邊
+                    Capsule()
+                        .frame(width: 14, height: 20)
+                        .offset(x: -15, y: 11)
+                        .foregroundStyle(.weedbrown)
+                    Capsule()
+                        .frame(width: 14, height: 20)
+                        .offset(x: 15, y: 11)
+                        .foregroundStyle(.weedbrown)
+                    
+                    // 身體
+                    Ellipse()
+                        .frame(width: 68, height: 14)
+                        .foregroundStyle(.tapiocapink)
+                    
+                    Ellipse()
+                        .trim(from: 0.4, to: 1)
+                        .frame(width: 60, height: 60)
+                        .foregroundStyle(.tapiocapink)
+                        .rotationEffect(.degrees(20))
+                        .offset(x: 6, y:  -10)
+                    
+                    Ellipse()
+                        .trim(from: 0.4, to: 1)
+                        .frame(width: 60, height: 60)
+                        .foregroundStyle(.tapiocapink)
+                        .rotationEffect(.degrees(17))
+                        .offset(x: -6, y:  -10)
+                    
+                    Ellipse()
+                        .trim(from: 0.5, to: 1)
+                        .frame(width: 68, height: 52)
+                        .foregroundStyle(.tapiocapink)
+                        .offset(y:  -15)
+                    
+                    // 雙腳
+                    Capsule()
+                        .frame(width: 7, height: 13)
+                        .offset(x: -15, y: 11)
+                        .foregroundStyle(.tapiocapink)
+                    Capsule()
+                        .frame(width: 7, height: 13)
+                        .offset(x: 15, y: 11)
+                        .foregroundStyle(.tapiocapink)
+                    
+                    // 眼睛與嘴巴 ._.
+                    ZStack {
+                        Circle()
+                            .frame(width: 6)
+                            .offset(x: -16, y: 0)
+                            .foregroundStyle(.weedbrown)
+                        Circle()
+                            .frame(width: 6)
+                            .offset(x: 16, y: 0)
+                            .foregroundStyle(.weedbrown)
+                        Capsule()
+                            .frame(width: 14, height: 4)
+                            .offset(x: 0, y: 8)
+                            .foregroundStyle(.weedbrown)
+                    }
+                    .offset(y: -20)
+                }
+                .offset(x: 43, y: 20)
+                
+                // 藍色粉圓
+                ZStack {
+                    // 身體描邊
+                    Ellipse()
+                        .frame(width: 76, height: 22)
+                        .foregroundStyle(.weedbrown)
+                    
+                    Ellipse()
+                        .trim(from: 0.4, to: 1)
+                        .frame(width: 60, height: 60)
+                        .foregroundStyle(.weedbrown)
+                        .rotationEffect(.degrees(20))
+                        .offset(x: 10, y:  -10)
+                    
+                    Ellipse()
+                        .trim(from: 0.4, to: 1)
+                        .frame(width: 60, height: 60)
+                        .foregroundStyle(.weedbrown)
+                        .rotationEffect(.degrees(17))
+                        .offset(x: -10, y:  -10)
+                    
+                    Ellipse()
+                        .trim(from: 0.5, to: 1)
+                        .frame(width: 76, height: 60)
+                        .foregroundStyle(.weedbrown)
+                        .offset(y:  -15)
+                    
+                    // 雙腳描邊
+                    Capsule()
+                        .frame(width: 14, height: 27)
+                        .rotationEffect(.degrees(-30))
+                        .offset(x: -14, y: 7)
+                        .foregroundStyle(.weedbrown)
+                    Capsule()
+                        .frame(width: 14, height: 27)
+                        .rotationEffect(.degrees(30))
+                        .offset(x: 14, y: 7)
+                        .foregroundStyle(.weedbrown)
+                    
+                    // 身體
+                    Ellipse()
+                        .frame(width: 68, height: 14)
+                        .foregroundStyle(.tapiocablue)
+                    
+                    Ellipse()
+                        .trim(from: 0.4, to: 1)
+                        .frame(width: 60, height: 60)
+                        .foregroundStyle(.tapiocablue)
+                        .rotationEffect(.degrees(20))
+                        .offset(x: 6, y:  -10)
+                    
+                    Ellipse()
+                        .trim(from: 0.4, to: 1)
+                        .frame(width: 60, height: 60)
+                        .foregroundStyle(.tapiocablue)
+                        .rotationEffect(.degrees(17))
+                        .offset(x: -6, y:  -10)
+                    
+                    Ellipse()
+                        .trim(from: 0.5, to: 1)
+                        .frame(width: 68, height: 52)
+                        .foregroundStyle(.tapiocablue)
+                        .offset(y:  -15)
+                    
+                    // 雙腳
+                    Capsule()
+                        .frame(width: 7, height: 22)
+                        .rotationEffect(.degrees(-30))
+                        .offset(x: -14, y: 7)
+                        .foregroundStyle(.tapiocablue)
+                    Capsule()
+                        .frame(width: 7, height: 22)
+                        .rotationEffect(.degrees(30))
+                        .offset(x: 14, y: 7)
+                        .foregroundStyle(.tapiocablue)
+                    
+                    // 眼睛與嘴巴 ._.
+                    ZStack {
+                        Circle()
+                            .frame(width: 6)
+                            .offset(x: -16, y: 0)
+                            .foregroundStyle(.weedbrown)
+                        Circle()
+                            .frame(width: 6)
+                            .offset(x: 16, y: 0)
+                            .foregroundStyle(.weedbrown)
+                        Capsule()
+                            .frame(width: 14, height: 4)
+                            .offset(x: 0, y: 8)
+                            .foregroundStyle(.weedbrown)
+                    }
+                    .offset(y: -20)
+                }
+                .offset(x: -35, y: 20)
+                
+                // 黃色粉圓
+                ZStack {
+                    // 身體描邊
+                    Ellipse()
+                        .frame(width: 76, height: 22)
+                        .foregroundStyle(.weedbrown)
+                    
+                    Ellipse()
+                        .trim(from: 0.4, to: 1)
+                        .frame(width: 60, height: 60)
+                        .foregroundStyle(.weedbrown)
+                        .rotationEffect(.degrees(20))
+                        .offset(x: 10, y:  -10)
+                    
+                    Ellipse()
+                        .trim(from: 0.4, to: 1)
+                        .frame(width: 60, height: 60)
+                        .foregroundStyle(.weedbrown)
+                        .rotationEffect(.degrees(17))
+                        .offset(x: -10, y:  -10)
+                    
+                    Ellipse()
+                        .trim(from: 0.5, to: 1)
+                        .frame(width: 76, height: 60)
+                        .foregroundStyle(.weedbrown)
+                        .offset(y:  -15)
+                    
+                    // 雙腳描邊
+                    Capsule()
+                        .frame(width: 14, height: 20)
+                        .offset(x: -15, y: 11)
+                        .foregroundStyle(.weedbrown)
+                    Capsule()
+                        .frame(width: 14, height: 20)
+                        .offset(x: 15, y: 11)
+                        .foregroundStyle(.weedbrown)
+                    
+                    // 身體
+                    Ellipse()
+                        .frame(width: 68, height: 14)
+                        .foregroundStyle(.tapiocayellow)
+                    
+                    Ellipse()
+                        .trim(from: 0.4, to: 1)
+                        .frame(width: 60, height: 60)
+                        .foregroundStyle(.tapiocayellow)
+                        .rotationEffect(.degrees(20))
+                        .offset(x: 6, y:  -10)
+                    
+                    Ellipse()
+                        .trim(from: 0.4, to: 1)
+                        .frame(width: 60, height: 60)
+                        .foregroundStyle(.tapiocayellow)
+                        .rotationEffect(.degrees(17))
+                        .offset(x: -6, y:  -10)
+                    
+                    Ellipse()
+                        .trim(from: 0.5, to: 1)
+                        .frame(width: 68, height: 52)
+                        .foregroundStyle(.tapiocayellow)
+                        .offset(y:  -15)
+                    
+                    // 雙腳
+                    Capsule()
+                        .frame(width: 7, height: 13)
+                        .offset(x: -15, y: 11)
+                        .foregroundStyle(.tapiocayellow)
+                    Capsule()
+                        .frame(width: 7, height: 13)
+                        .offset(x: 15, y: 11)
+                        .foregroundStyle(.tapiocayellow)
+                    
+                    // 眼睛與嘴巴 ._.
+                    ZStack {
+                        Circle()
+                            .frame(width: 6)
+                            .offset(x: -16, y: 0)
+                            .foregroundStyle(.weedbrown)
+                        Circle()
+                            .frame(width: 6)
+                            .offset(x: 16, y: 0)
+                            .foregroundStyle(.weedbrown)
+                        Capsule()
+                            .frame(width: 14, height: 4)
+                            .offset(x: 0, y: 8)
+                            .foregroundStyle(.weedbrown)
+                    }
+                    .offset(y: -20)
+                }
+                .offset(x: 4, y: -26)
+            }
+            .scaleEffect(1.1)
+            .offset(x: 100, y: 370)
+
         }
     }
 }
