@@ -4,10 +4,10 @@
 [![Swift](https://img.shields.io/badge/Swift-5.0+-orange.svg?logo=swift&logoColor=white&style=flat-square)](https://developer.apple.com/swift/)
 [![iOS](https://img.shields.io/badge/iOS-16.0+-blue.svg?logo=apple&logoColor=white&style=flat-square)](https://developer.apple.com/ios/)
 [![Homework](https://img.shields.io/badge/作業-用形狀創作圖案-purple.svg?style=flat-square)](#)
-</div>
 
 > 一個完全使用 SwiftUI 內建形狀製作可愛角色圖案的 iOS 繪圖專案 🌈
 
+</div>
 <p align="center">
   <img src="Screenshot.png" alt="App Screenshot" width="350" />
 </p>
